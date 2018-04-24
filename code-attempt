@@ -42,7 +42,7 @@ a_clicks_pivot = a_clicks.pivot(columns='is_click',index='day',values='user_id')
 
 b_clicks_pivot = b_clicks.pivot(columns='is_click',index='day',values='user_id').reset_index()
 
-
+#a_clicks_pivot['percentage'] = (a_clicks_pivot[True] / (a_clicks_pivot[True] + a_clicks_pivot[False]))*100
 
 print(ad_clicks)
 print(a_clicks)
